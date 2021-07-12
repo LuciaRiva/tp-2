@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+    <title>Registrate</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2?" family = "Roboto" wght @ 100 & display= "swap" rel= "stylesheet">
+    
+    <script src= "https://kit.fonttawesome.com/ed2c01daca.js" crossorigin="anonymous"></script> 
+    <link rel= "stylesheet" href= "normalize.css">
+    <link href="css/estilos.css" rel= "stylesheet" />
+   
+  
+</head>
+
+<body>
+    <header id="inicio">
+        <div class="conteiner-1">
+        <div id="log-barra">
+                <div class="logo"> <a href="/home.html"> <img src = "img/logo-mercado-liebre.svg"  style="max-width:100%;width:50% ;"> </a></div>
+        
+        <div class="barra">
+            <input type = "search" placeholder="Buscá productos, marcas" id="barra-busqueda"/>
+            <button id="boton-busqueda"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <h3 class="cuotas"> &#x1F4B8   Compra en cuotas y sin tarjeta de credito </h3>
+        </div>
+         </div>
+        
+        <nav>
+        <div id="menu">
+            <ul class="menu1">
+            <li><a class="dropdown-item" href="#">Ofertas |</a></li>
+            <li><a class="dropdown-item" href="#">Tiendas Oficiales |</a></li>
+            <li><a class="dropdown-item" href="#">Vender |</a></li>
+            <li><a class="dropdown-item" href="#">Ayuda </a></li>
+        </ul>
+        <ul class="menu2">
+          
+            <li><a class="dropdown-item" href="/register.html"> Crea tu cuenta &#x1F64C  |</a></li>
+            <li><a class="dropdown-item" href="/login.html"> Ingresar &#x1F4E5  |</a></li>
+            <li><a class="dropdown-item" href="#">Mis compras &#x1F45C  </a></li>
+        </ul>
+        </div>
+        </nav>
+         </header>
+
+
+
+<main>
+
+    <section class= "form-singup">
+    
+
+        <form action= "/register.html" method="POST">
+        
+            
+         <div class= "register">
+
+            <h1 class="form-title" id="signup">Registrate</h1>
+            <h4>Es rapido y facil!</h4>
+            <div class="nombrelogin">
+                <label for="name" id="name"></label>
+                <input type="text" name= "name" id= "name" autofocus= 1 placeholder="Nombre de usuario" required> 
+            </div>
+            <div class="nombrelogin">
+                <label for="name" id="name"></label>
+                <input type="text" name= "name" id= "name" autofocus= 1 placeholder="Nombre y Apellido" required> 
+            </div>
+
+        <div class="emaillogin">
+            <label for="email" id="email"></label>
+            <input type="email" name= "email" id= "email" autofocus= 1 placeholder=" Correo electronico" aria-required="true" aria-describedat="form-email.error" data-missing-error="El campo es requerido." required>
+            <div class="invalid-feedback" id="form-email-error"></div>
+        </div>
+        
+
+        <div class="fechanacimiento">
+        <h4>Fecha de Nacimiento:</h4>
+            <label for="start" class="fecha-nacimiento"></label>
+            <input type="date" id="start" name="trip-start" value="2021-07-06" min="1900-01-01" max="2023-12-31">
+        </div>
+
+        <div class="domicilio">
+            <label for="domicilio" id="domicilio"></label>
+            <input type="text" name= "domicilio" id= "domicilio" autofocus= 1 placeholder="Domicilio" required> 
+        </div>
+
+        <div class="perfil">
+            <h4>Perfil:</h4>
+            <label for="perfil">Comprador</label>
+            <input type="radio" name= "perfil" id= "perfil" autofocus= 1 placeholder="Comprador" required> 
+            <label for="perfil">Vendedor</label>
+            <input type="radio" name= "perfil" id= "perfil" autofocus= 1 placeholder="Comprador" required> 
+        </div>
+        <div class="categoria-interes">
+            <h4>Categorias de interes:</h4>
+            <label for="categoria">Electro</label>
+            <input type="checkbox" name="categoria" id="categoria" >
+            <label for="categoria">Moda</label>
+            <input type="checkbox" name="categoria" id="categoria" >
+            <label for="categoria">Hogar</label>
+            <input type="checkbox" name="categoria" id="categoria">
+            <label for="categoria">Jugueteria</label>
+            <input type="checkbox" name="categoria" id="categoria">
+            <label for="categoria">Vida sana</label>
+            <input type="checkbox" name="categoria" id="categoria">
+
+</div>
+
+<div class="foto-perfil">
+    <h4>Selecciona foto de usuario:</h4>
+    <label for="avatar" class="avatar"></label>
+    <input type="file" name="avatar" id="avatar" accept=".jpg">
+
+
+
+</div>
+        <div class="passwordlogin">
+            <label for="name" id="password"></label>
+            <input type="password" name= "password" id= "password" autofocus= 1 placeholder=" Contraseña" required>
+        </div>
+        
+        <div class="passwordlogin">
+        
+            <label for="name" id="password"></label>
+            <input type="password" name= "password" id= "password" autofocus= 1 placeholder="Repetir contraseña" required>
+        </div>
+         <br>
+        
+         <div class="button-register">
+
+            <a href="/home.html"> <button type="submit" class="buttonlogin"> Enviar </button> </a>
+            <button type="reset" class="buttonlogin">Borrar</button>
+        
+        </div>  
+
+        <h5>Al registrarte aceptas nuestras condiciones, politicas de datos y politica cookis.</h5>
+        
+    </div>
+        
+        </form>
+        
+             </section>
+
+</main>
+
+
+<footer>
+
+    <nav class="footer">
+    
+    <section id="pagos">
+        
+        <div id= "pago">  <i class="fas fa-credit-card"></i> </div>
+        <h4>Paga con tarjeta o en efectivo</h4>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.¡Y siempre es seguro! </p>
+    
+    </section>
+    
+    <section id="envios">
+       
+        <div id="envio"> <i class="fas fa-gift"> </i>
+        </div>
+        <h4>Envio gratis desde $2500</h4>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envios gratis en miles de productos. Es un beneficio de Mercados Puntos.</p>
+    
+    </section>
+    
+    <section id="seguro">
+    
+        <div id= "seguridad"> <i class="fas fa-user-shield"></i>
+        </div>
+        <h4>Seguridad, de principio a fin.</h4>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siemore protegid@.</p>
+    
+    </section>
+    
+    <br>
+    
+    <section id="copy"><h4>Copyright © 1999-2020 MercadoLiebre S.L.R. .</h4></section>
+    
+    </nav>
+     
+    </footer> 
+    
+    </body>
+    
+    </html><Doctype>
